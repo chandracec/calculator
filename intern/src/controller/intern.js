@@ -12,7 +12,7 @@ const createIntern = async (req, res) => {
       return res.status(400).send({ status: false, message: "Name should only contain letters" });
     }
 
-    // Validate email format
+    // Validate email 
     if (!valid.validEmail(email)) {
       return res.status(400).send({ status: false, message: "Please enter a valid email address" });
     }
